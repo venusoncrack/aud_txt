@@ -15,7 +15,7 @@ from googletrans import Translator
 
 st.title("Traductor de voz")
 
-image = Image.open('gatos.jpeg')
+image = Image.open('perrofeliz.png')
 
 
 width, height = image.size
@@ -36,7 +36,7 @@ st.write('')
 stt_button = Button(label=" COMENZAR ", width=200)
 
 st.subheader("Toca el botón y di en voz alta lo que quieras que traduzca")
-st.write("Apenas le des click, comienza a hablar:")
+st.write("Click y comienza a hablar:")
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
